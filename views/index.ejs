@@ -1,0 +1,22 @@
+<%- include header %>
+<h1 class='bigFont shadowText'>miniChat<small class="well-sm middleFont glyphicon glyphicon-th">即时沟通，乐在表达</small>
+    <label><a href="/chat" class="chatDoor">进入聊天室>>></a></label>
+</h1>
+<blockquote>
+    在意轻松，在意小巧，在意时尚
+    <small>开发自node.js+socket.io</small>
+    <small>正在听----天灯.mp3</small>
+    <small>从什么都没有的地方，到什么都没有的地方</small>
+    <small>我也曾经做梦过，后来更寂寞</small>
+</blockquote>
+<!--<code>-->
+    <!--alert(555);-->
+<!--</code>-->
+<pre class="bg-danger">
+    //socket.io
+    var io=require('socket.io')();
+    exports.listen= function (_server) {
+        return io.listen(_server);
+    };
+</pre>
+<%- include footer %>

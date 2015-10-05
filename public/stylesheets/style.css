@@ -1,0 +1,82 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #fffffe;
+}
+
+a {
+  color: #00B7FF;
+}
+.bigFont{
+  font-size: 70px;
+}
+.middleFont{
+  font-size: 30px;
+}
+.shadowText{
+  text-shadow: 5px 5px 10px #aaaaaa;
+}
+.chatDoor{
+  font-size: 50px;
+  text-shadow: 2px 2px 5px #aaaaaa;
+  margin-left:0px;
+  transition: text-shadow .2s,margin-left 0.3s;
+}
+.chatDoor:hover{
+  text-shadow: 5px 5px 10px #aaaaaa;
+  color: #00B7FF;
+  margin-left:10px;
+  text-decoration: none;
+}
+footer{
+  margin-top: 50px;
+}
+.miniheader{
+  background-color: tomato;
+}
+.talk-box{
+  padding: 0;
+}
+.msg-body{
+  margin-top: 20px;
+}
+.msg-content{
+  /*text-align: left;*/
+  clear: both;
+  padding: 15px;
+}
+/*.msg-wrap{*/
+  /*position: relative;*/
+/*}*/
+.msg-list-body{
+  height: 400px;
+  overflow: auto;
+}
+.input-group-addon{
+  background-color: #fff;
+}
+.msg-name,.msg-time{
+  position: relative;
+  top: 8px;
+  margin:0 5px;
+  z-index: 1;
+}
+.msg-server{
+  background: rgba(0,0,0,0.3);
+  display: inline-block;
+  width: auto;
+  margin: 7px 0;
+  padding: 2px 15px;
+  color: #fff;
+  border-radius: 3px;
+}
+.msg-server>span{
+  color: #000088;
+}
+.user-list{
+  height: 310px;
+  overflow: auto;
+}
+#login-modal{
+  margin-top: 50px;
+}

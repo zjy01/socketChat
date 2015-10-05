@@ -1,0 +1,115 @@
+<%- include header %>
+<header class="navbar-fixed-top navbar-brand bg-success text-center miniheader">
+<%=title%>
+</header>
+<div class="row msg-body">
+  <div class="col-lg-8 panel panel-default talk-box">
+    <div class="panel-heading">
+      <span class="glyphicon glyphicon-earphone"> 聊天窗口</span>
+    </div>
+    <div class="panel-body msg-list-body">
+
+        <!--<div class="clearfix msg-wrap">-->
+          <!--<div class="msg-head">-->
+            <!--<span class="msg-name label label-primary pull-left">-->
+              <!--<span class="glyphicon glyphicon-user"></span>-->
+              <!--系统消息-->
+            <!--</span>-->
+            <!--<span class="msg-time label label-default pull-left">-->
+              <!--<span class="glyphicon glyphicon-time"></span>-->
+              <!--21:34:15-->
+            <!--</span>-->
+          <!--</div>-->
+          <!--<div class="msg-content well-sm label-info col-lg-7 pull-left">-->
+            <!--似懂非懂是-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="clearfix msg-wrap">-->
+          <!--<div class="msg-head">-->
+            <!--<span class="msg-name label label-primary pull-right">-->
+              <!--<span class="glyphicon glyphicon-user"></span>-->
+              <!--系统消息-->
+            <!--</span>-->
+            <!--<span class="msg-time label label-default pull-right">-->
+              <!--<span class="glyphicon glyphicon-time"></span>-->
+              <!--21:34:15-->
+            <!--</span>-->
+          <!--</div>-->
+          <!--<div class="msg-content well-sm label-success text-right col-lg-7 pull-right">-->
+            <!--似懂非懂是-->
+          <!--</div>-->
+        <!--</div>-->
+
+      <!--<div class="clearfix text-center">-->
+        <!--<div class="msg-server">-->
+          <!--4444-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+    <div class="panel-footer">
+        <div class="input-group">
+          <label class="input-group-addon"><span class="glyphicon glyphicon-edit"></span></label>
+          <input type="text" class="form-control" placeholder="请输入内容" id="msg-content">
+          <a class="btn btn-success input-group-addon" id="send-btn">
+            <span class="glyphicon glyphicon-send"></span>
+            发送
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <span class="glyphicon glyphicon-user"> 用户设置</span>
+      </div>
+      <div class="panel-body">
+        昵称：<a href="javascript:void(0)" id="username" title="点击设置昵称" value="0">点击设置昵称</a>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <span class="glyphicon glyphicon-list"> 在线列表</span>
+      </div>
+      <div class="panel-body user-list">
+        <ul id="user-list">
+        </ul>
+      </div>
+      <div class="panel-footer">
+        在线人数：<span id="online-num">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--模拟窗-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only"></span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">请设置聊天昵称</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-8 col-sm-push-2">
+            <div class="alert alert-danger" role="alert" id="nickname-error" style="display: none">
+              <span class="glyphicon glyphicon-remove"></span>
+              <span id="error-msg">请填写昵称</span>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">昵称</span>
+              <input type="text" id="nickname-edit" class="form-control" placeholder="请输入昵称">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="nickname-btn">应用昵称</button>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include footer %>
