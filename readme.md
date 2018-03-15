@@ -1,4 +1,4 @@
-﻿### 基于socket.io+nodejs+express+bootstrap的即时聊天系统
+### 基于socket.io+nodejs+express+bootstrap的即时聊天系统
 
 > socket.io v1.3.7
 
@@ -9,7 +9,7 @@
 > bootstrap v3.3.5
 
 ### 实例地址
-http://chat.zjy.space
+http://chat.carvenzhang.cn
 
 ### 相关博客
-http://blog.zjy.space/2015/10/05/socket/
+http://blog.carvenzhang.cn/2015/10/05/socket/
